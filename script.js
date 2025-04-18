@@ -29,7 +29,7 @@ const loader=new THREE.TextureLoader();
 const geo=new THREE.IcosahedronGeometry(1.5,12);
 const mat=new THREE.MeshStandardMaterial({
     color: 0xffffff,
-    map:loader.load("earthmap1k.jpg")
+    map:loader.load("8081_earthmap10k.jpg")
    // flatShading:true
 });
 const mesh=new THREE.Mesh(geo,mat);
@@ -38,7 +38,7 @@ const stars = createStarField();
 scene.add(stars);
 
 const lightsMat = new THREE.MeshBasicMaterial({
-    map:loader.load("earthlights1k.jpg"),
+    map:loader.load("8081_earthlights10k.jpg"),
     blending: THREE.AdditiveBlending,
 });
 const lightsMesh=new THREE.Mesh(geo,lightsMat);
